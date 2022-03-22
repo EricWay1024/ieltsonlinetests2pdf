@@ -95,8 +95,13 @@ if __name__ == '__main__':
     months = ['january', 'february', 'march', 'april', 'may', 'june', 
         'july', 'august', 'september', 'october', 'november', 'december']
 
-    name_list_2 = [f'ielts-mock-test-{year}-{month}-reading-practice-test-{num}' for year in [
-        2020, 2021] for month in months for num in [1, 2]]
-
+    name_list_2 = [f'ielts-practice-tests-plus-{v}-reading-practice-test-{p}' for v in range(1, 4) for p in range(1, 8)]
+    name_list_3 = [f'ielts-practice-test-{v}-reading-practice-test-{p}' for v in range(1, 9) for p in range(1, 3)]
+    
+    name_list_4 = [f'ielts-mock-test-{year}-{month}-reading-practice-test-{num}' for year in [
+        2020, 2021, 2022] for month in months for num in [1, 2]]
+    
     fetch_name_list(name_list_1)
     fetch_name_list(name_list_2)
+    fetch_name_list(name_list_3)
+    fetch_name_list(name_list_4)

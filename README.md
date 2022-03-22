@@ -2,6 +2,12 @@
 
 ieltsonlinetests.com is a free website for IELTS mock tests. In case you need to generate PDF files for the reading tests there (so that you can print them out or take notes using your iPad), this repo would be useful.
 
+A pdf sample is available at `sample.pdf`.
+
+If you just want all the PDF files, please download `ielts-mock-reading-tests.zip` (updated in March, 2022). 
+
+If you want to run the script yourself:
+
 Install dependencies:
 
 ```
@@ -16,3 +22,5 @@ python3 main.py
 ```
 
 You can modify the parameter to call `fetch_name_list` to adjust to your needs. A `test_name` is what follows `https://ieltsonlinetests.com/` in the test url, e.g. `ielts-mock-test-2022-february-reading-practice-test-1`, and you call `fetch_name_list` with a list of `test_name`s. The resultant PDFs will be saved to `OUTPUT_DIR`, default as `./res`.
+
+The original website has the copyright of the tests.
